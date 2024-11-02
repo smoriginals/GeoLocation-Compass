@@ -8,4 +8,10 @@ navigator.geolocation.watchPosition((data) => {
 }, (err) => {
     console.error(err);
     alert("Please Allow The Location Permission");
-});
+},
+    {
+        enableHighAccuracy: true,
+        maximumAge: 0,
+        timeout: 5000
+    }
+);
