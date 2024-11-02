@@ -1,11 +1,11 @@
 let arrow = document.querySelector(".compass-arrow");
-let speed = document.getElementById('speed');
+let speed = document.querySelector('#speed');
 
 navigator.geolocation.watchPosition((data) => {
-    console.log(data);
-    speed.textContent = data.coords.speed;
-    arrow.style.transform = `rotate(${data.coords.heading}deg)`;
+    speed.textContent = data.coords.speed !== null ? data.coords.speed : 'N/A';
+    let heading = data.coords.heading !== null ? data.coords.heading : 0;
+    arrow.style.transform = `rotate(${heading}deg)`;
 }, (err) => {
-    console.err(err);
+    console.error(err);
     alert("Please Allow The Location Permission");
 });
