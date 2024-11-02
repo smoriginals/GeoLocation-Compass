@@ -29,10 +29,12 @@ p{
     justify-content: center;
     align-items: center;
     position:relative;
+    transform:rotate(0deg);
 }
 .compass-arrow {
     height: 15px;
     width: 150px;
     background-image: url('arrow.png');
     background-size: cover;
+    transform: rotate(0deg);
 }
