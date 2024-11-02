@@ -13,19 +13,10 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color:darkblue;
-}
-.container {
-    height: 500px;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction:column;
     flex-wrap:wrap;
-    position:relative;
+    background-color:darkblue;
 }
-
 
 .compass-ring {
     height: 400px;
@@ -44,8 +35,15 @@ body{
     background-size: cover;
     transform: rotate(0deg);
 }
-p {
-    font-size: 1.5rem;
-    position:absolute;
-    top:500px;
+p{
+    font-size:2rem;
+    position:relative;
+    top:50px;
+}
+@media(width:720px){
+    p {
+        font-size: 5rem;
+        position: relative;
+        top: 50px;
+    }
 }
