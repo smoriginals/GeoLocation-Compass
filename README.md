@@ -1,2 +1,1 @@
-# GeoLocation-Compass
- GeoLocation and Compass Tagging
+[OPEN IN BROWSER](//smos-github.github.io/GeoLocation-Compass/)
